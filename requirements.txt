@@ -1,0 +1,7 @@
+fastapi[standard]
+sqlalchemy
+openai==0.28.0
+requests
+gunicorn
+alembic
+psycopg2
