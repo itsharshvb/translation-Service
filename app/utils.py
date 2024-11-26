@@ -26,8 +26,7 @@ def perform_translation(task_id: int, text: str, languages: list, db: Session):
             )
             translations[lang] = translated_text
             """
-            translated_text = ['one', 'two', 'three']
-            translations = translated_text
+            translations[lang] = f'{text} to translated text'
         except Exception as e:
             print(f"Error Translating to {lang}:{e}")
             translations[lang] = f"Error: {e}"
